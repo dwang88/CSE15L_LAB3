@@ -50,5 +50,29 @@ In the original code, the reversed values are not saved for the next iteration. 
 - chapter-2.txt             Nostalgia for Islam's past glory remains a powerful force.
 This command is useful if you want to search for a specific word, and when there are hundreds of files to look through. 
 
-3. grep -v "example" file.txt
-4. grep -e "pattern1" -e "pattern2" file.txt
+2. grep -v "example" file.txt
+- ```grep -v "the" chapter-1.txt```
+- Output (Omitted some of the output because too long): 
+-     FAA: Yes.
+
+    NEADS: On its way towards Washington?
+
+
+    NEADS: Okay.
+
+
+
+    NEADS: He-American 11 is a hijack?
+
+    FAA: Yes.
+
+    NEADS: And he's heading into Washington?
+
+    FAA: Yes. This could be a third aircraft.
+- ```grep -v "a" chapter-1.txt```
+- Output (Omitted some of the output because too long): 
+-     Center: Do you know who he is?
+This command is useful if you want to search for lines in a specific line that don't contain a specific word. 
+
+
+3. grep -e "pattern1" -e "pattern2" file.txt

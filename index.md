@@ -53,7 +53,7 @@ This command is useful if you want to search for a specific word, and when there
 2. ```grep -v "example" file.txt```
 - ```grep -v "the" chapter-1.txt```
 - Output (Omitted some of the output because too long): 
--     FAA: Yes.
+    FAA: Yes.
 
     NEADS: On its way towards Washington?
 
@@ -71,14 +71,15 @@ This command is useful if you want to search for a specific word, and when there
     FAA: Yes. This could be a third aircraft.
 - ```grep -v "a" chapter-1.txt```
 - Output (Omitted some of the output because too long): 
--     Center: Do you know who he is?
+Center: Do you know who he is?
+
 This command is useful if you want to search for lines in a specific line that don't contain a specific word. 
 
 
 3. ```grep -e "pattern1" -e "pattern2" file.txt```
 - ```grep -e "6:45" -e "7:40" chapter-1.txt```
 - Output:
--     Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparently took a call from Marwan al Shehhi, a longtime colleague    
+Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparently took a call from Marwan al Shehhi, a longtime colleague    
 who was at another terminal at Logan Airport. They spoke for three minutes.
     Between 6:45 and 7:40, Atta and Omari, along with Satam al Suqami, Wail al Shehri, and Waleed al Shehri, checked in and boarded American  
 Airlines Flight 11, bound for Los Angeles. The flight was scheduled to depart at 7:45.
@@ -113,7 +114,7 @@ was sitting behind him.
 4. grep -i "pattern" file.txt
 - ```grep -i "CAPPS" chapter-1.txt```
 - Output:
--     When he checked in for his flight to Boston, Atta was selected by a computerized prescreening system known as CAPPS (Computer Assisted    
+When he checked in for his flight to Boston, Atta was selected by a computerized prescreening system known as CAPPS (Computer Assisted    
 Passenger Prescreening System), created to identify passengers who should be subject to special security measures. Under security rules in    
 place at the time, the only consequence of Atta's selection by CAPPS was that his checked bags were held off the plane until it was
 confirmed that he had boarded the aircraft. This did not hinder Atta's plans.
@@ -138,7 +139,7 @@ Airlines ticket counter for Flight 93, going to Los Angeles. Two checked bags; t
 was screened for explosives and then loaded on the plane.
 - ```grep -i "FAA" chapter-1.txt```
 - Output (Ommitted part of output because too long):
--  At the suggestion of the Boston Center's military liaison, NEADS contacted the FAA's Washington Center to ask about American 11. In the   
+At the suggestion of the Boston Center's military liaison, NEADS contacted the FAA's Washington Center to ask about American 11. In the   
 course of the conversation, a Washington Center manager informed NEADS:"We're looking- we also lost American 77." The time was 9:34. This     
 was the first notice to the military that American 77 was missing, and it had come by chance. If NEADS had not placed that call, the NEADS    
 air defenders would have received no information whatsoever that the flight was even missing, although the FAA had been searching for it. No  
@@ -153,4 +154,5 @@ ocean." I don't care how many windows you break," he said." Damn it. . . . Okay.
 a distance to the target or the target's location. Second, a "generic" flight plan-prepared to get the aircraft airborne and out of local     
 airspace quickly-incorrectly led the Langley fighters to believe they were ordered to fly due east (090) for 60 miles. Third, the lead pilot  
 and local FAA controller incorrectly assumed the flight plan instruction to go "090 for 60" superseded the original scramble order.
-- This might be useful if you want to look for text that is case sensitive in a certain file. 
+
+This might be useful if you want to look for text that is case sensitive in a certain file. 

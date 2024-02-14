@@ -43,11 +43,11 @@ In the original code, the reversed values are not saved for the next iteration. 
 1. ```grep -r "example" .```
 -  ```grep -r "transliteration" ./technical```
 -  Outputs:
-- chapter-2.txt           we use its transliteration, e.g.,"al Qida" instead of al Qaeda.
-- chapter-13.5.text             40. Among the more important problems to address is that of varying transliterations
+chapter-2.txt           we use its transliteration, e.g.,"al Qida" instead of al Qaeda.
+chapter-13.5.text             40. Among the more important problems to address is that of varying transliterations
 -  ```grep -r "Nostalgia" ./technical```
 -  Outputs:
-- chapter-2.txt             Nostalgia for Islam's past glory remains a powerful force.
+chapter-2.txt             Nostalgia for Islam's past glory remains a powerful force.
 This command is useful if you want to search for a specific word, and when there are hundreds of files to look through. 
 
 2. ```grep -v "example" file.txt```
@@ -109,7 +109,7 @@ Atta and Omari, was stabbed by one of the hijackers-probably Satam al Suqami, wh
 years as an officer in the Israeli military. He may have made an attempt to stop the hijackers in front of him, not realizing that another    
 was sitting behind him.
 
-- This command is useful if you want to search for two potential lines of text in a certain file. 
+This command is useful if you want to search for two potential lines of text in a certain file. 
 
 4. grep -i "pattern" file.txt
 - ```grep -i "CAPPS" chapter-1.txt```

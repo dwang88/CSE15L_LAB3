@@ -8,8 +8,10 @@ public void testReverseInPlace() {
 
 An input that doesn't induce a failure:
 ```
-	public void testReverseInPlace() {
+public void testReverseInPlace() {
     int[] input1 = { 7 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 7 }, input1);
 ```
+The symptom: 
+ ![Image](testfail.png)

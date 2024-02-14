@@ -79,6 +79,7 @@ This command is useful if you want to search for lines in a specific line that d
 3. ```grep -e "pattern1" -e "pattern2" file.txt```
 - ```grep -e "6:45" -e "7:40" chapter-1.txt```
 - Output:
+- 
 Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparently took a call from Marwan al Shehhi, a longtime colleague    
 who was at another terminal at Logan Airport. They spoke for three minutes.
     Between 6:45 and 7:40, Atta and Omari, along with Satam al Suqami, Wail al Shehri, and Waleed al Shehri, checked in and boarded American  
@@ -90,6 +91,8 @@ cleared the checkpoint and made their way to the gate for American 11. Atta, Oma
 boarded American 11 between 7:31 and 7:40. The aircraft pushed back from the gate at 7:40.
 
 - ```grep -e "Banihammad" -e "Suqami" chapter-1.txt```
+- Output:
+
     Between 6:45 and 7:40, Atta and Omari, along with Satam al Suqami, Wail al Shehri, and Waleed al Shehri, checked in and boarded American  
 Airlines Flight 11, bound for Los Angeles. The flight was scheduled to depart at 7:45.
     In another Logan terminal, Shehhi, joined by Fayez Banihammad, Mohand al Shehri, Ahmed al Ghamdi, and Hamza al Ghamdi, checked in for     

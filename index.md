@@ -15,3 +15,24 @@ public void testReverseInPlace() {
 ```
 The symptom: 
  ![Image](testfail1.png)
+
+The bug:
+```
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+
+Fixed: 
+```
+  static void reverseInPlace(int[] arr) {
+    for (int i = 0; i < arr.length / 2; i += 1) {
+      int placeholder = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = placeholder;
+    }
+  }
+```
+In the original code, the reversed values are not saved for the next iteration. This causes the final array to repeat numbers because certain values in the array are not updated correctly. In my code, we only iterate up to ```arr.length / 2``` to avoid the issue in the original code. I then store ```arr[i]``` in the temporary placeholder, which will later be set to ```arr[arr.length - i - 1]``` to "reverse" the array.

@@ -156,3 +156,7 @@ airspace quickly-incorrectly led the Langley fighters to believe they were order
 and local FAA controller incorrectly assumed the flight plan instruction to go "090 for 60" superseded the original scramble order.
 
 This might be useful if you want to look for text that is case sensitive in a certain file. 
+
+
+**Citation**
+I used Geeksforgeeks and DigitalOcean, which I found through google, for all of these commands.

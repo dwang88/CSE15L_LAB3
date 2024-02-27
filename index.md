@@ -46,14 +46,20 @@ In the original code, the reversed values are not saved for the next iteration. 
 -  This command searches for the word "transliteration" in the ```./technical``` file directory. This command is useful if you want to search for a specific word, and when there are hundreds of files to look through.
 
 -  Outputs:
-```chapter-2.txt           we use its transliteration, e.g.,"al Qida" instead of al Qaeda.
+```
+
+chapter-2.txt           we use its transliteration, e.g.,"al Qida" instead of al Qaeda.
 chapter-13.5.text             40. Among the more important problems to address is that of varying transliterations
+
 ```
 -  ```grep -r "Nostalgia" ./technical```
 -  This command searches for the word "Nostalgia" in the ```./technical``` file directory. This command is useful if you want to search for a specific word, and when there are hundreds of files to look through.
 -  Outputs:
+-  
 ```
+
 chapter-2.txt             Nostalgia for Islam's past glory remains a powerful force.
+
 ```
 
 **Citation**
@@ -104,6 +110,7 @@ I used Geeksforgeeks (https://www.geeksforgeeks.org/grep-command-in-unixlinux/) 
 - ```grep -e "6:45" -e "7:40" chapter-1.txt```
 - This command is looking for either "6:45" or "7:40" in the ```chapter-1.txt``` file. This command is useful if you want to search for two potential lines of text in a certain file. 
 - Output:
+
 ```
 Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparently took a call from Marwan al Shehhi, a longtime colleague    
 who was at another terminal at Logan Airport. They spoke for three minutes.

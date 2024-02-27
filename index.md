@@ -53,10 +53,12 @@ chapter-2.txt           we use its transliteration, e.g.,"al Qida" instead of al
 chapter-13.5.text             40. Among the more important problems to address is that of varying transliterations
 
 ```
+
+
 -  ```grep -r "Nostalgia" ./technical```
 -  This command searches for the word "Nostalgia" in the ```./technical``` file directory. This command is useful if you want to search for a specific word, and when there are hundreds of files to look through.
 -  Outputs:
--  
+
 ```
 
 chapter-2.txt             Nostalgia for Islam's past glory remains a powerful force.

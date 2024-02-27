@@ -16,7 +16,7 @@ public void testReverseInPlace() {
     assertArrayEquals(new int[]{ 7 }, input1);
 ```
 The symptom: 
- ![Image](testfail1.png)
+ ![Image](replace.png)
 
 The bug:
 ```
@@ -43,16 +43,23 @@ In the original code, the reversed values are not saved for the next iteration. 
 1. ```grep -r "example" .```
 -  ```grep -r "transliteration" ./technical```
 -  Outputs:
-chapter-2.txt           we use its transliteration, e.g.,"al Qida" instead of al Qaeda.
+```chapter-2.txt           we use its transliteration, e.g.,"al Qida" instead of al Qaeda.
 chapter-13.5.text             40. Among the more important problems to address is that of varying transliterations
+```
 -  ```grep -r "Nostalgia" ./technical```
 -  Outputs:
+```
 chapter-2.txt             Nostalgia for Islam's past glory remains a powerful force.
-This command is useful if you want to search for a specific word, and when there are hundreds of files to look through. 
+```
+This command is useful if you want to search for a specific word, and when there are hundreds of files to look through.
+
+**Citation**
+I used Geeksforgeeks (https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and DigitalOcean (https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix), which I found through google search for this command. 
 
 2. ```grep -v "example" file.txt```
 - ```grep -v "the" chapter-1.txt```
-- Output (Omitted some of the output because too long): 
+- Output (Omitted some of the output because too long):
+```
     FAA: Yes.
 
     NEADS: On its way towards Washington?
@@ -69,17 +76,23 @@ This command is useful if you want to search for a specific word, and when there
     NEADS: And he's heading into Washington?
 
     FAA: Yes. This could be a third aircraft.
+```
 - ```grep -v "a" chapter-1.txt```
-- Output (Omitted some of the output because too long): 
+- Output (Omitted some of the output because too long):
+```
 Center: Do you know who he is?
-
+```
 This command is useful if you want to search for lines in a specific line that don't contain a specific word. 
+
+
+**Citation**
+I used Geeksforgeeks (https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and DigitalOcean (https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix), which I found through google search for this command. 
 
 
 3. ```grep -e "pattern1" -e "pattern2" file.txt```
 - ```grep -e "6:45" -e "7:40" chapter-1.txt```
 - Output:
-- 
+```
 Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparently took a call from Marwan al Shehhi, a longtime colleague    
 who was at another terminal at Logan Airport. They spoke for three minutes.
     Between 6:45 and 7:40, Atta and Omari, along with Satam al Suqami, Wail al Shehri, and Waleed al Shehri, checked in and boarded American  
@@ -89,10 +102,10 @@ selected in Boston. Their selection affected only the handling of their checked 
 cleared the checkpoint and made their way to the gate for American 11. Atta, Omari, and Suqami took their seats in business class (seats 8D,  
 8G, and 10B, respectively). The Shehri brothers had adjacent seats in row 2 (Wail in 2A, Waleed in 2B), in the firstclass cabin. They
 boarded American 11 between 7:31 and 7:40. The aircraft pushed back from the gate at 7:40.
-
+```
 - ```grep -e "Banihammad" -e "Suqami" chapter-1.txt```
 - Output:
-
+```
     Between 6:45 and 7:40, Atta and Omari, along with Satam al Suqami, Wail al Shehri, and Waleed al Shehri, checked in and boarded American  
 Airlines Flight 11, bound for Los Angeles. The flight was scheduled to depart at 7:45.
     In another Logan terminal, Shehhi, joined by Fayez Banihammad, Mohand al Shehri, Ahmed al Ghamdi, and Hamza al Ghamdi, checked in for     
@@ -111,12 +124,16 @@ business-class seat, possibly accompanied by Omari. As this was happening, passe
 Atta and Omari, was stabbed by one of the hijackers-probably Satam al Suqami, who was seated directly behind Lewin. Lewin had served four     
 years as an officer in the Israeli military. He may have made an attempt to stop the hijackers in front of him, not realizing that another    
 was sitting behind him.
-
+```
 This command is useful if you want to search for two potential lines of text in a certain file. 
 
-4. grep -i "pattern" file.txt
+**Citation**
+I used Geeksforgeeks (https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and DigitalOcean (https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix), which I found through google search for this command. 
+
+4. ```grep -i "pattern" file.txt```
 - ```grep -i "CAPPS" chapter-1.txt```
 - Output:
+```
 When he checked in for his flight to Boston, Atta was selected by a computerized prescreening system known as CAPPS (Computer Assisted    
 Passenger Prescreening System), created to identify passengers who should be subject to special security measures. Under security rules in    
 place at the time, the only consequence of Atta's selection by CAPPS was that his checked bags were held off the plane until it was
@@ -140,8 +157,11 @@ that he did not.
     Newark: United 93. Between 7:03 and 7:39, Saeed al Ghamdi, Ahmed al Nami, Ahmad al Haznawi, and Ziad Jarrah checked in at the United      
 Airlines ticket counter for Flight 93, going to Los Angeles. Two checked bags; two did not. Haznawi was selected by CAPPS. His checked bag    
 was screened for explosives and then loaded on the plane.
+```
+
 - ```grep -i "FAA" chapter-1.txt```
 - Output (Ommitted part of output because too long):
+```
 At the suggestion of the Boston Center's military liaison, NEADS contacted the FAA's Washington Center to ask about American 11. In the   
 course of the conversation, a Washington Center manager informed NEADS:"We're looking- we also lost American 77." The time was 9:34. This     
 was the first notice to the military that American 77 was missing, and it had come by chance. If NEADS had not placed that call, the NEADS    
@@ -157,9 +177,9 @@ ocean." I don't care how many windows you break," he said." Damn it. . . . Okay.
 a distance to the target or the target's location. Second, a "generic" flight plan-prepared to get the aircraft airborne and out of local     
 airspace quickly-incorrectly led the Langley fighters to believe they were ordered to fly due east (090) for 60 miles. Third, the lead pilot  
 and local FAA controller incorrectly assumed the flight plan instruction to go "090 for 60" superseded the original scramble order.
+```
 
 This might be useful if you want to look for text that is case sensitive in a certain file. 
 
-
 **Citation**
-I used Geeksforgeeks and DigitalOcean, which I found through google, for all of these commands.
+I used Geeksforgeeks (https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and DigitalOcean (https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix), which I found through google search for this command. 

@@ -43,22 +43,26 @@ In the original code, the reversed values are not saved for the next iteration. 
 **Part two**
 1. ```grep -r "example" .```
 -  ```grep -r "transliteration" ./technical```
+-  This command searches for the word "transliteration" in the ```./technical``` file directory. This command is useful if you want to search for a specific word, and when there are hundreds of files to look through.
+
 -  Outputs:
 ```chapter-2.txt           we use its transliteration, e.g.,"al Qida" instead of al Qaeda.
 chapter-13.5.text             40. Among the more important problems to address is that of varying transliterations
 ```
 -  ```grep -r "Nostalgia" ./technical```
+-  This command searches for the word "Nostalgia" in the ```./technical``` file directory. This command is useful if you want to search for a specific word, and when there are hundreds of files to look through.
 -  Outputs:
 ```
 chapter-2.txt             Nostalgia for Islam's past glory remains a powerful force.
 ```
-This command is useful if you want to search for a specific word, and when there are hundreds of files to look through.
 
 **Citation**
+
 I used Geeksforgeeks (https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and DigitalOcean (https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix), which I found through google search for this command. 
 
 2. ```grep -v "example" file.txt```
 - ```grep -v "the" chapter-1.txt```
+- This command searches ```chapter-1.txt``` to see which lines don't contain the word "the". This command is useful if you want to search for lines in a specific line that don't contain a specific word. 
 - Output (Omitted some of the output because too long):
 ```
     FAA: Yes.
@@ -79,19 +83,20 @@ I used Geeksforgeeks (https://www.geeksforgeeks.org/grep-command-in-unixlinux/) 
     FAA: Yes. This could be a third aircraft.
 ```
 - ```grep -v "a" chapter-1.txt```
+- This command searches ```chapter-1.txt``` to see which lines don't contain the word "a". This command is useful if you want to search for lines in a specific line that don't contain a specific word. 
 - Output (Omitted some of the output because too long):
 ```
 Center: Do you know who he is?
 ```
-This command is useful if you want to search for lines in a specific line that don't contain a specific word. 
-
 
 **Citation**
+
 I used Geeksforgeeks (https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and DigitalOcean (https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix), which I found through google search for this command. 
 
 
 3. ```grep -e "pattern1" -e "pattern2" file.txt```
 - ```grep -e "6:45" -e "7:40" chapter-1.txt```
+- This command is looking for either "6:45" or "7:40" in the ```chapter-1.txt``` file. This command is useful if you want to search for two potential lines of text in a certain file. 
 - Output:
 ```
 Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparently took a call from Marwan al Shehhi, a longtime colleague    
@@ -105,6 +110,7 @@ cleared the checkpoint and made their way to the gate for American 11. Atta, Oma
 boarded American 11 between 7:31 and 7:40. The aircraft pushed back from the gate at 7:40.
 ```
 - ```grep -e "Banihammad" -e "Suqami" chapter-1.txt```
+- This command is looking for either "Banihammad" or "Suqami" in the ```chapter-1.txt``` file. This command is useful if you want to search for two potential lines of text in a certain file. 
 - Output:
 ```
     Between 6:45 and 7:40, Atta and Omari, along with Satam al Suqami, Wail al Shehri, and Waleed al Shehri, checked in and boarded American  
@@ -126,13 +132,14 @@ Atta and Omari, was stabbed by one of the hijackers-probably Satam al Suqami, wh
 years as an officer in the Israeli military. He may have made an attempt to stop the hijackers in front of him, not realizing that another    
 was sitting behind him.
 ```
-This command is useful if you want to search for two potential lines of text in a certain file. 
 
 **Citation**
+
 I used Geeksforgeeks (https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and DigitalOcean (https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix), which I found through google search for this command. 
 
 4. ```grep -i "pattern" file.txt```
 - ```grep -i "CAPPS" chapter-1.txt```
+- This command loops for lines that contain "CAPPS" in ```chapter-1.txt```. Note that this is case sensitive. This might be useful if you want to look for text that is case sensitive in a certain file. 
 - Output:
 ```
 When he checked in for his flight to Boston, Atta was selected by a computerized prescreening system known as CAPPS (Computer Assisted    
@@ -161,6 +168,7 @@ was screened for explosives and then loaded on the plane.
 ```
 
 - ```grep -i "FAA" chapter-1.txt```
+- This command loops for lines that contain "FAA" in ```chapter-1.txt```. Note that this is case sensitive. This might be useful if you want to look for text that is case sensitive in a certain file. 
 - Output (Ommitted part of output because too long):
 ```
 At the suggestion of the Boston Center's military liaison, NEADS contacted the FAA's Washington Center to ask about American 11. In the   
@@ -180,7 +188,7 @@ airspace quickly-incorrectly led the Langley fighters to believe they were order
 and local FAA controller incorrectly assumed the flight plan instruction to go "090 for 60" superseded the original scramble order.
 ```
 
-This might be useful if you want to look for text that is case sensitive in a certain file. 
 
 **Citation**
+
 I used Geeksforgeeks (https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and DigitalOcean (https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix), which I found through google search for this command. 

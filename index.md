@@ -16,7 +16,7 @@ public void testReverseInPlace() {
     assertArrayEquals(new int[]{ 7 }, input1);
 ```
 The symptom: 
- ![Image](testfail.png)
+ ![Image](testfail1.png)
  ![Image](replace.png)
 
 The bug:

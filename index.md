@@ -46,6 +46,7 @@ In the original code, the reversed values are not saved for the next iteration. 
 -  This command searches for the word "transliteration" in the ```./technical``` file directory. This command is useful if you want to search for a specific word, and when there are hundreds of files to look through.
 
 -  Outputs:
+
 ```
 
 chapter-2.txt           we use its transliteration, e.g.,"al Qida" instead of al Qaeda.

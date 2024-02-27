@@ -89,8 +89,10 @@ I used Geeksforgeeks (https://www.geeksforgeeks.org/grep-command-in-unixlinux/) 
 - ```grep -v "a" chapter-1.txt```
 - This command searches ```chapter-1.txt``` to see which lines don't contain the word "a". This command is useful if you want to search for lines in a specific line that don't contain a specific word. 
 - Output (Omitted some of the output because too long):
+
 ```
 Center: Do you know who he is?
+
 ```
 
 **Citation**
